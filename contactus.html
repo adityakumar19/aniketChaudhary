@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="contactus.css">
+    <title>Thermosys Techmologies</title>
+    <link rel="shortcut icon" type="image" href="logo.png">
+</head>
+<body>
+    <section class="contact">
+        <div class="content">
+            <h2>CONTACT US</h2>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>ADDRESS</h3>
+                        <p>Shop no 1,<br>Near Jain Mandir,Ambegaon Kh <br>PUNE-411046</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>CONTACT</h3>
+                        <p>9119584548</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-envelope"></i></div>
+                    <div class="text">
+                        <h3>E-MAIL</h3>
+                        <p>thermosystech@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactform">
+                <form action="javascript:sendmail()" method="POST">
+                    <h2>Send message</h2>
+                    <div class="inputBox">
+                        <input type="text" name="Name" id="Name"   required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="Contact" id="Contact"  required="required">
+                        <span>Contact</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="email" name="Email" id="Email"  required="required">
+                        <span>E-mail</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea name="Message" id="Message" cols="30" rows="10"  required="required"></textarea>
+                        <span>Message</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit"  class="btn btn-class" name="" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendmail(){
+
+        var name    = $('#Name').val();
+        var contact = $('#Contact').val();
+        var email   = $('#Email').val();
+        var message = $('#Message').val();
+
+        var Body='Name :'+Name+'<br>E-mail :'+Email+ '<br>Contact :' +Contact+ '<br>Message :' +Message; 
+
+    
+
+
+    Email.send({
+    Host : "smtp.gmail.com",
+    Username : "ashutoshgaikwad4585@gmail.com",
+    Password : "Ashu@112132",
+    To : 'thermosystech@gmail.com',
+    From : "ashutoshgaikwad4585@gmail.com",
+    Subject : "New Mail on Website Contact Form",
+    Body : "abbcd"
+    // Email.send({
+	// 			Host: "smtp.gmail.com",
+	// 			Username : "<sender’s email address>",
+	// 			Password : "<email password>",
+	// 			To : '<recipient’s email address>',
+	// 			From : "<sender’s email address>",
+	// 			Subject : "<email subject>",
+	// 			Body : "<email body>",
+	// 		})
+
+
+}).then(
+  message => {
+      if(message=='OK'){
+          alert('Thankyou your Email has been Received')
+      }
+      else{
+          alert('Email not Received,Pls Send Again')
+      }
+
+  }
+);
+    }
+</script>
+</html>

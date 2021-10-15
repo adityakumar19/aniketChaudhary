@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thermosys Techmologies</title>
+<link rel="shortcut icon" type="image" href="logo.png">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: linear-gradient(#004e92,#000428);
+
+}
+
+html {
+  box-sizing: border-box;
+}
+*{
+  box-sizing: border-box;
+}
+ *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  margin-top: 25px;
+}
+
+.card {
+  background: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background: linear-gradient(#000428,#004e92);
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 50px;
+}
+
+.button:hover {
+  background-color: #555;
+}
+a{
+  text-decoration: none;
+}
+
+.isocert {
+  padding-left:  450px;
+  margin-top: 20px;
+  
+  
+}
+.isocert img{
+  width: 500px;
+  height: 600px;
+}
+/* @media screen and (max-width: 650px) { */
+/*     */
+/* } */
+@media(max-width:991px){
+  .column {
+  width: 100%;
+  display: block;
+}
+.isocert{
+  padding-left: 0px;
+}
+.about-section {
+  width: 100%;
+}
+.isocert img{
+  width: 100%;
+  height: 600px;
+
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>About Us</h1>
+  <p>“Our vision is to provide solution to industry by
+    our quality products.”</p>
+  <p>“Our deepest purpose as a company is to provide
+    solutions to industrial needs through our quality
+    products and innovation”
+    </p>
+    <p>ISO Certified :  9001:2015</p>
+</div>
+
+
+  <div class="column">
+    <div class="card">
+      <!-- <img src="/w3images/team2.jpg" alt="Mike" style="width:100%"> -->
+      <div class="container">
+        <h2>Ashutosh Gaikwad</h2>
+        <p class="title">FOUNDER & CEO</p>
+        <p>thermosystech@gmail.com</p>
+        <p><a href="contactus.html" class="button">Contact</a></p>
+        <!-- <p><button class="button">Contact</button></p> -->
+      </div>
+    </div>
+  </div>
+  
+ <div class="isocert">
+   <img src="isocertificate.jpg" alt="">
+ </div>
+
+</body>
+</html>
+

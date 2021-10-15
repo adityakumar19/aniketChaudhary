@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thermosys Techmologies</title>
+    <link rel="shortcut icon" type="image" href="logo.png">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background: #111;
+        }
+        div h1{
+            padding-top: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            color: white;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+        div h1::before{
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            width: 50px;
+            height: 2px;
+            background: teal;
+        }
+        main{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .prcontainer{
+            width: 80%;
+            display: grid;
+            grid-template-columns: 40% 60%;
+            grid-template-areas: "cover content";
+            box-shadow: -2px 0px 33px 0px rgba(0,0,0,0.75);
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        .cover{
+            grid-area: cover;
+           height: 60vh;
+           background-image: url('');
+           background-size: cover;
+           background-position: center center;
+        }
+        .content{  
+            background:#181818;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        .content h2{
+            font-size: 35px;
+            padding-top: 10px;
+            padding-bottom : 20px;
+            color: teal;
+            padding-top: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            margin-bottom: 5px;
+        }
+        .content h2::before{
+            content: '';
+            position: absolute;
+            bottom: 3px;
+            width: 120px;
+            height: 2px;
+            background: white;
+        }
+         .cover img{
+                 width: 420px;
+                 height: 420px;
+        } 
+        .content img{
+          opacity: 0;
+          width: 0;
+          height: 0;
+         }
+  
+        .content p{
+            font-size: 20px;
+            color: grey;
+            padding-top:50px ;
+            width: 60%;
+        } 
+
+
+        @media(max-width:991px){
+    .prcontainer{
+        position: relative;
+        min-height: 100vh;
+        /* display: flex; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* flex-direction: column; */
+        display: grid;
+        grid-template-columns: 0% 100%;
+        grid-template-areas: "cover content";
+    }
+   .content img{
+       opacity: 1;
+       width: 300px;
+       height: 200px;
+   }
+   
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Heating Element</h1>
+    </div>
+    <main>
+       
+        <div class="prcontainer">
+            <div class="cover">
+                <img src="ceramicband.png" alt="">
+            </div>
+            <div class="content">
+                <!-- <div class="nav"></div> -->
+                
+                    <h2>Ceramic Band Heater</h2>
+                    <img src="ceramicband.png" alt="">
+                    <p>Our Ceramic Band Heaters were developed to meet industrial
+                        requirements for high temperature long lasting heaters. They
+                        are ideally suited to comply with today's new resins, which calls
+                        for ever
+                        -increasing process temperatures. An additional
+                        advantage of the Ceramic Band Heater is that they transfer heat
+                        through conduction and radiation. This makes their tightness on
+                        barrels less critical; thus they are less prone to thermal
+                        expansion problems. Theoretically, there are no restrictions on
+                        the diameter that ceramic band heaters can attain.</p>>                  
+                </div>
+            </div>
+
+         <div class="prcontainer">
+             <div class="cover">
+                <img src="MicaBand.png" alt="">
+             </div>
+             <div class="content">
+                 <!-- <div class="nav"></div> -->
+                 
+                     <h2>Mica Band Heater </h2>
+                     <img src="MicaBand.png" alt="">
+                     <p>Mica Band heaters are efficient and economical solutions to
+                        the heating requirements of many applications. Mica Band
+                        heaters can attain a maximum sheath temperature of
+                        900
+                        °F, but with different electrical termination styles,
+                        clamping mechanisms, and ability to accommodate holes
+                        and cutouts, mica band heaters are successfully used in
+                        many applications, but are mostly sought for in the plastics
+                        industry. The Mica Band Heaters made by us utilizes
+                        different types of Top Grade Mica. The thickness of each
+                        mica layer is carefully selected in order to balance between
+                        the insulating characteristics of mica and the ease of heat
+                        transfer from the heating core to the machine barrel.</p>
+                     
+                 </div>
+             </div>
+
+         <div class="prcontainer">
+             <div class="cover">
+                <img src="LowdensityHeatrer.png" alt="">
+             </div>
+             <div class="content">
+                 <!-- <div class="nav"></div> -->
+                 
+                     <h2>Low & Medium Density Cartridge Heater </h2>
+                     <img src="LowdensityHeatrer.png" alt="">
+                     <p>Our Low & Medium Density Cartridge Heater is developed
+                        for heating applications not requiring high watt densities
+                        and sheath temperatures not exceeding 300
+                        °C. These
+                        Cartridge Heating Elements are designed in maximum watt
+                        densities of 30 to 45 watts per square inch depending on
+                        applications. Such a Cartridge Heating Elements of various
+                        sheath diameters can be used in any assembly, equipment
+                        or machine. The Low & Medium Density Cartridge Heater
+                        can be absolutely customized to suit customer’s needs.
+                        Such Cartridge Heating Elements can be an economical
+                        option for customers not requiring high process temp.. </p>                  
+                 </div>
+             </div>
+
+
+         <div class="prcontainer">
+             <div class="cover">
+                <img src="highdensityheater.png" alt="">
+             </div>
+             <div class="content">
+                 <!-- <div class="nav"></div> -->
+                 
+                     <h2>High Density Cartridge Heater</h2>
+                     <img src="highdensityheater.png" alt="">
+                     <p>Our High Density Cartridge Heater can be considered
+                        "Component Heaters" that are used to heat up many different
+                        applications. Primarily used in moulds, dies & sealing bars, this
+                        Cartridge Heating Element fit snug inside a cavity and helps
+                        heat solids by reaching high temperatures. High Density
+                        Cartridge Heater has the versatility of being able to carry
+                        thermocouple inside to help control temperatures of the
+                        heater more accurately. Various diameters allow for the
+                        Cartridge Heating Element to be used in any cavity and can be
+                        custom designed with any cold section. Lead wires extend
+                        from the end to your controls.</p>>            
+                 </div>
+             </div>
+         
+
+        <div class="prcontainer">
+           <div class="cover">
+            <img src="stripheaters.png" alt="">
+           </div>
+           <div class="content">
+               <!-- <div class="nav"></div> -->
+               
+                   <h2>Mica Strip Heater Heater</h2>
+                   <img src="stripheaters.png" alt="">
+                   <p>Our Strip heaters, often considered component heaters, are
+                       a simple way of using surface area to transfer heat
+                       effectively. A fairly inexpensive way of heating surfaces or
+                       small areas, strip heaters are an excellent solution to meet
+                       any budget. If strip heaters are used as a radiant heater.
+                       Strip heater Heat up time is fast to provide a quick response
+                       to control input. The Mica insulation also withstands high
+                       voltage temperatures, resist moisture, and remain immune
+                       to most chemicals. The Aluminized Steel sheath is rust
+                       resistant, durably rigid, and generates heat well </p>>         
+               </div>
+           </div>
+
+       <div class="prcontainer">
+           <div class="cover">
+            <img src="ImmerssionHeters.png" alt="">
+           </div>
+           <div class="content">
+               <!-- <div class="nav"></div> -->
+               
+                   <h2>Immersion Heater</h2>
+                   <img src="ImmerssionHeters.png" alt="">
+                   <p>Our Immersion heaters are a fast and efficient way of
+                    heating up various liquid solutions in processing
+                    equipment, large tanks and containers in many industries.
+                    Heating up liquids using direct heat transfer allows for the
+                    liquid medium to quickly reach the desired temperature
+                    using electric heaters. This application is commonly used in
+                    chemical processes, large petrochemical containers as well
+                    as large water containers that require fast heat up time.
+                    With minimal maintenance requirements, immersion
+                    heaters are an excellent solution to rapid heating in almost
+                    any industrial environment.
+                    </p>                                                                                                   
+               </div>
+           </div>
+
+      <div class="prcontainer">
+          <div class="cover">
+            <img src="Manifoldheater.png" alt="">
+          </div>
+          <div class="content">
+              <!-- <div class="nav"></div> -->
+              
+                  <h2>Manifold Heater</h2>
+                  <img src="Manifoldheater.png" alt="">
+                  <p>Our Manifold Tubular Heating Elements provide for an
+                    economical, robust, and versatile heat source. These elements are
+                    commonly used to fit into milled grooves for hot runner molding
+                    systems. The precision fit optimizes heat transfer to the working
+                    surface. Our skilled benders and specialized bending equipment
+                    allow us to bend complex shapes. The Manifold Tubular Heating
+                    Elements are Custom Designed.The helically wound heating
+                    element is made out of high temperature resistance NiCr wire.
+                    This element is being insulated with high temperature grade
+                    Magnesium Oxide Powder. As the Heaters are swaged and
+                    annealed at high sheath temperatures, they carry excellent
+                    electrical insulation and high heat transfer rate.</p>                                                                                 
+              </div>
+          </div>
+
+
+       <div class="prcontainer">
+           <div class="cover">
+            <img src="CoilHeateer (1).png" alt="">
+           </div>
+           <div class="content">
+               <!-- <div class="nav"></div> -->
+               
+                   <h2>Coil Heater</h2>
+                   <img src="CoilHeateer (1).png" alt="">
+                   <p>It is a high performance heater used in various applications
+                    like Blow Molding Machine, Extrusion Machine, Hot Runner
+                    System, Injection Molding Machine, Thermoforming
+                    Machine. This heater is capable of taking shape as per the
+                    requirement of Application. Coil Heater have total flexibility
+                    in the distribution of heating density on the whole surface
+                    of the heated body.
+                    To ensure that the standard 1000 mm PTFE-insulated
+                    connection cable can be positioned at one end, despite the
+                    standard two-ended connection of the element, in most
+                    cases the Coil Heater is formed into a hairpin shape and
+                    wound in a parallel format.</p>                                                                                          
+               </div>
+           </div>
+
+
+         <div class="prcontainer">
+             <div class="cover">
+                <img src="Fin_Strip_Heater_off_set_terminals_1.png" alt="">
+             </div>
+             <div class="content">
+                 <!-- <div class="nav"></div> -->
+                 
+                     <h2>Finned Tubular Air Heater</h2>
+                     <img src="Fin_Strip_Heater_off_set_terminals_1.png" alt="">
+                     <p>Our Finned tubular heater are the most common type of heating
+                        elements used for heating air and other gases. The fins along the
+                        tubular length assist in even heat dissipation. All elements have
+                        mild steel fins copper brazed to the tubular heating element
+                        sheath unless otherwise specified.Duct heaters use fin tubular
+                        elements within its design to help reduce the watt density. It also
+                        allows for more consistent air flow streams within the duct and
+                        increases the life longevity of the elements.In applications
+                        where tubular heaters are exposed to forced convection, placing
+                        fins around tubular heaters increases their surface area and thus
+                        improves their heat transferring capacity.</p>                                                        
+                        
+                 </div>
+             </div>
+
+
+     <div class="prcontainer">
+         <div class="cover">
+            <img src="tubularheater.png" alt="">
+         </div>
+         <div class="content">
+             <!-- <div class="nav"></div> -->
+             
+                 <h2>Tubular Heater</h2>
+                 <img src="tubularheater.png" alt="">
+                 <p>Our versatile Tubular Heaters are custom
+                    -formed in a wide
+                    variety of shapes to correspond to your requirements.
+                    Tubular heaters can be used in almost any application.
+                    Straight Tubular Heaters can be clamped to metal surfaces
+                    or inserted in machined grooves for conductive heat
+                    transfer. Or use a formed Tubular to provide consistent
+                    heat in any type of special application. Tubular Heaters may
+                    be clamped, immersed in liquids, cast into metal or spaced
+                    away from the work as radiant heaters. They may also be
+                    positioned in ducts or vessels for heating air or other
+                    gases. Tubular Heaters of proper rating, material and shape
+                    can be used in most heating applications requiring process
+                    temperatures up to 750o C (1382o F).</p>                                                               
+             </div>
+         </div>
+
+
+    <div class="prcontainer">
+        <div class="cover">
+            <img src="Fin_Strip_Heater_off_set_terminals_1.png" alt="">
+        </div>
+        <div class="content">
+            <!-- <div class="nav"></div> -->
+            
+        <h2>Finned Strip Air Heater</h2>
+        <img src="Fin_Strip_Heater_off_set_terminals_1.png" alt="">
+        <p>Our Finned Strip Heaters are used for both forced (mounted in
+            a duct) and natural convection air heating (mounted at the
+            bottom of cabinet type ovens).Fins increase the heat transfer
+            surface area to allow higher wattages than standard Strip
+            Heaters. These are intended to be operated with a substantial
+            airflow and are typically used in heating tunnels, dryers or any
+            application that requires a hot air source. Finned strip
+            heaters, often considered component heaters, are an electric
+            heating element that maximizes heat intensity and transfer
+            effectively in an area. </p>      
+      </div>
+    </div>
+
+    <div class="prcontainer">
+        <div class="cover">
+            <img src="MicaBand.png" alt="">
+        </div>
+        <div class="content">
+            <!-- <div class="nav"></div> -->
+            
+        <h2>Porcelain/Bobbin Heater</h2>
+        <img src="MicaBand.png" alt="">
+        <p>Manufactured from high temperature bearing insulators, Our
+            Bobbin/ Porcelain Heaters offered are used in various
+            industries. The Antique Porcelain Heater contains elements
+            that are exposed partially in air for better transmission of
+            heat. Porcelain Heater is extensively used in ovens, tanks
+            where draining cannot be done to change the heaters. The
+            Porcelain Heaters offered by us are known for their high
+            precision, performance and durability. Porcelain Heater is
+            constructed using several refractory ceramic blocks assembled
+            together to the required length. The Nichrome wire heating
+            element is inserted</p>
+           
+           
+           
+           
+           
+           
+           
+           
+           
+        </div>
+    </div>
+  
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thermosys Techmologies</title>
+    <link rel="shortcut icon" type="image" href="logo.png">
+    
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background: #111;
+        }
+        div h1{
+            padding-top: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            color: white;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+        div h1::before{
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            width: 50px;
+            height: 2px;
+            background: teal;
+        }
+        main{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .prcontainer{
+            width: 80%;
+            display: grid;
+            grid-template-columns: 40% 60%;
+            grid-template-areas: "cover content";
+            box-shadow: -2px 0px 33px 0px rgba(0,0,0,0.75);
+        }
+        .cover{
+            grid-area: cover;
+           height: 60vh;
+           background-image: url('');
+           background-size: cover;
+           background-position: center center;
+        }
+        .content{  
+            background:#181818;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        .content h2{
+           font-size: 35px;
+           padding-top: 10px;
+           padding-bottom : 20px;
+           color: teal;
+           padding-top: 25px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           position: relative;
+          margin-bottom: 5px;
+        }
+        .content h2::before{
+            content: '';
+            position: absolute;
+            bottom: 3px;
+            width: 120px;
+            height: 2px;
+            background: white;
+        }
+        .cover img{
+                 width: 420px;
+                 height: 420px;
+        } 
+        .content img{
+          opacity: 0;
+          width: 0;
+          height: 0;
+         }
+        .content p{
+            font-size: 20px;
+            color: grey;
+            padding-top:50px ;
+            width: 60%;
+        }
+
+
+
+        @media(max-width:991px)
+        {
+       .prcontainer{
+           position: relative;
+           min-height: 100vh;
+           /* display: flex; */
+           /* justify-content: center; */
+           /* align-items: center; */
+           /* flex-direction: column; */
+           display: grid;
+           grid-template-columns: 0% 100%;
+           grid-template-areas: "cover content";
+         }
+        .content img{
+          opacity: 1;
+          width: 300px;
+          height: 200px;
+        }
+        }   
+
+
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Temperature Sensors</h1>
+    </div>
+    <main>
+       
+        <div class="prcontainer">
+            <div class="cover">
+                <img src="TempratureSensor.jpeg" alt="">
+            </div>
+            <div class="content">
+                <!-- <div class="nav"></div> -->
+                
+                    <h2>Thermocouples And RTD Sensors</h2>
+                    <img src="TempratureSensor.jpeg" alt="">
+                    <p>We produce top of the line temperature sensing devices
+                        also known as Thermocouples. A thermocouple is a sensor
+                        for measuring temperature. It consists of two dissimilar
+                        metals, joined together at one end. When the junction of
+                        the two metals is heated or cooled a voltage is produced
+                        that can interpreted by a temperature controller, high limit
+                        or display device. There are two common constructions for
+                        these: Tube and Wire and Mineral Insulated. The tube and
+                        wire uses an empty stainless tube with a wire inside which
+                        has a welded tip incorporating the wire junction. This
+                        construction is typically used to 480ºC. The Mineral
+                        Insulated construction uses a highly compacted stainless
+                        sheath with solid conductors encased in magnesium oxide
+                        insulation. This construction offers a wider variety of
+                        diameters, allows for the sensors to be bent in the field and
+                        for temperatures to 1200ºC. These sensors are available is a
+                        huge range of physical packages with a variety of lead wire,
+                        housing, and mounting options. </p>
+                    
+                    
+                    
+                </div>
+            </div>
+        
+    </main>
+    
+</body>
+</html>
